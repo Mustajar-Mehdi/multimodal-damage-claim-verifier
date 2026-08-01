@@ -1,0 +1,7 @@
+api_key.txt
+__pycache__/
+*.pyc
+log.txt
+log_test.txt
+.env
+checkpoint*.jsonl
