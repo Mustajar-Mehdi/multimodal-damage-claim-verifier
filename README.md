@@ -141,7 +141,7 @@ The evaluation script:
 ## 📁 Repository Structure
 
 ```
-Hackathon_files/
+multimodal-damage-claim-verifier/
 ├── code/
 │   ├── pipeline.py           # Main verification engine
 │   ├── evaluate.py           # Strategy comparison & report generation
@@ -152,19 +152,20 @@ Hackathon_files/
 │   ├── .env                  # Your API key (DO NOT COMMIT)
 │   └── .env.example          # Template — copy and fill in your key
 ├── dataset/
-│   ├── claims.csv            # Test dataset (44 rows)
-│   ├── sample_claims.csv     # Labeled sample dataset (20 rows, ground truth)
-│   ├── user_history.csv      # User risk history
+│   ├── claims.csv             # Test dataset (44 rows)
+│   ├── sample_claims.csv      # Labeled sample dataset (20 rows, ground truth)
+│   ├── user_history.csv       # User risk history
 │   ├── evidence_requirements.csv
-│   └── images/               # Image assets
+│   └── images/sample/         # Images for sample_claims.csv
+├── test/                      # Images for claims.csv (test set)
 ├── evaluation/
 │   ├── sample_predictions_strategy1.csv
 │   ├── sample_predictions_strategy2.csv
-│   └── evaluation_report.md  # Auto-generated benchmark report
-├── output.csv                # Final predictions for claims.csv
-├── checkpoint.jsonl          # Resume checkpoint (auto-deleted on full success)
+│   └── evaluation_report.md   # Auto-generated benchmark report
+├── output.csv                 # Final predictions for claims.csv
+├── .gitignore
+├── problem_statement.md
 └── README.md
-```
 
 ---
 
